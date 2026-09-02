@@ -1,0 +1,51 @@
+body {
+    /* 1. Cambio de tipo de letra */
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 500px;
+}
+
+/* 2. Cambio de color y tamaño para el Título */
+.titulo {
+    color: #2c3e50;         /* Azul oscuro elegante */
+    font-size: 3rem;        /* Tamaño grande e impactante */
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.nombre-estudiante {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+/* 3. Cambio de color y decoración para tu nombre */
+.destaque {
+    color: #e74c3c;         /* Rojo coral vibrante para resaltar tu nombre */
+    font-weight: 600;
+    border-bottom: 2px dashed #e74c3c;
+}
+
+.mensaje {
+    color: #27ae60;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    background-color: #e8f8f0;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 0;
+}
