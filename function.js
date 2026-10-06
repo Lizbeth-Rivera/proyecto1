@@ -13,21 +13,21 @@ btnTema2.addEventListener('click', () => {
 
   if (body.classList.contains('modo_transparente')) {
     btnTema2.textContent = ' OPACO (: ';
-    imagen1.src = './img/imagen1-1.webp';
-    imagen2.src = './img/imagen2-1.webp';
-    imagen3.src = './img/imagen3-1.webp';
-    imagen4.src = './img/imagen1-1.webp';
-    imagen5.src = './img/imagen2-1.webp';
-    imagen6.src = './img/imagen3-1.webp';
+    imagen1.src = './imagen1-1.webp';
+    imagen2.src = './imagen2-1.webp';
+    imagen3.src = './imagen3-1.webp';
+    imagen4.src = './imagen1-1.webp';
+    imagen5.src = './imagen2-1.webp';
+    imagen6.src = './imagen3-1.webp';
 
   } else {
     btnTema2.textContent = ' TRANSPARENTE :) ';
-    imagen1.src = './img/imagen1.webp';
-    imagen2.src = './img/imagen2.webp';
-    imagen3.src = './img/imagen3.webp';
-    imagen4.src = './img/imagen1.webp';
-    imagen5.src = './img/imagen2.webp';
-    imagen6.src = './img/imagen3.webp';
+    imagen1.src = './imagen1.webp';
+    imagen2.src = './imagen2.webp';
+    imagen3.src = './imagen3.webp';
+    imagen4.src = './imagen1.webp';
+    imagen5.src = './imagen2.webp';
+    imagen6.src = './imagen3.webp';
   }
   console.log('Se aplico transparente:', body.classList.contains
     ('modo_transparente'));
@@ -99,12 +99,12 @@ form.addEventListener('submit', (event) => {
 //////////////////////////////////////////////////////
 // 1. Cambia a la nueva imagen al pasar el cursor por encima
 imagen1.addEventListener('mouseenter', () => {
-    imagen1.src = './img/imagen1-1.webp';
+    imagen1.src = './imagen1-1.webp';
 });
 
 // 2. Regresa a la imagen original al quitar el cursor
 imagen1.addEventListener('mouseleave', () => {
-    imagen1.src = './img/imagen1.webp';
+    imagen1.src = './imagen1.webp';
 });
 
 
@@ -126,8 +126,8 @@ function cambiarConEfecto(nuevaSrc) {
 }
 
 // Eventos Hover
-imagen2.addEventListener('mouseenter', () => cambiarConEfecto('./img/imagen1-1.webp'));
-imagen2.addEventListener('mouseleave', () => cambiarConEfecto('./img/imagen1.webp'));
+imagen2.addEventListener('mouseenter', () => cambiarConEfecto('./imagen1-1.webp'));
+imagen2.addEventListener('mouseleave', () => cambiarConEfecto('./imagen1.webp'));
 
 
 //////////////////////////////////////////////////////
@@ -156,13 +156,13 @@ imagen3.addEventListener('mouseleave', () => {
 
 // Al pasar el cursor: cambia la imagen y aplica zoom (escala 1.2 = 20% más grande)
 imagen4.addEventListener('mouseenter', () => {
-    imagen4.src = './img/imagen1-1.webp';
+    imagen4.src = './imagen1-1.webp';
     imagen4.style.transform = 'scale(1.1)';
 });
 
 // Al quitar el cursor: regresa a la imagen original y tamaño normal
 imagen4.addEventListener('mouseleave', () => {
-    imagen4.src = './img/imagen1.webp';
+    imagen4.src = './imagen1.webp';
     imagen4.style.transform = 'scale(1)';
 });
 
@@ -175,13 +175,13 @@ imagen4.addEventListener('mouseleave', () => {
 
 // Al pasar el cursor: cambia la imagen y rota 15 grados
 imagen5.addEventListener('mouseenter', () => {
-    imagen5.src = './img/imagen2-1.webp';
+    imagen5.src = './imagen2-1.webp';
     imagen5.style.transform = 'rotate(15deg)';
 });
 
 // Al quitar el cursor: regresa a la imagen original y endereza la posición
 imagen5.addEventListener('mouseleave', () => {
-    imagen5.src = './img/imagen2.webp';
+    imagen5.src = './imagen2.webp';
     imagen5.style.transform = 'rotate(0deg)';
 });
 
