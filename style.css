@@ -95,23 +95,27 @@ input, textarea{
     background: inherit;
     padding: 15px 0px;
 }
-/*input::placeholder, textarea::placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{*/
-input::placeholder, input::-moz-placeholder, input::-webkit-input-placeholder{
-    color:var(--rosa);
+input::placeholder,
+textarea::placeholder {
+    color: var(--rosa);
     font-size: 1rem;
-}
-input:focus-visible {
-    outline: none!important;
+    opacity: 1;
 }
 
-input::focus-visible {
-    outline: none!important;
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: var(--rosa);
+    opacity: 1;
 }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: var(--rosa);
+    opacity: 1;
+}
+input:focus-visible,
 textarea:focus-visible {
-    outline: none!important;
-}
-textarea::focus-visible {
-    outline: none!important;
+    outline: none !important;
 }
 input[type="submit"]{
     background-color: var(--rosa);
